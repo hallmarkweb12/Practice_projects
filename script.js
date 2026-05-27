@@ -1,4 +1,4 @@
-const text = "Web Developer | UI Designer";
+const text = "Frontend Developer • UI Builder • Problem Solver";
 let i = 0;
 let el = document.querySelector(".typing");
 function type(){

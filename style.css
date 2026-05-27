@@ -5,7 +5,7 @@
  body {
      background: radial-gradient(circle at top, #0b1220, #070b16);
      margin: 0;
-     font-family: Inter, sans-serif;
+     font-family: 'Inter', sans-serif;
  }
 
  header {
@@ -49,7 +49,7 @@
  .hero {
      text-align: center;
      padding: 120px 20px;
-     font-family: Inter, sans-serif;
+     font-family: 'Inter', sans-serif;
      display: flex;
      justify-content: space-between;
      align-items: center;
@@ -82,7 +82,7 @@
  }
 
  #my_image {
-     border: none;
+     border: 2px solid blue;
      border-radius: 50%;
      overflow: hidden;
      width: 320px;
@@ -133,17 +133,42 @@
      padding: 100px 20px;
      margin: auto;
      max-width: 57rem;
+     overflow: hidden;
+     height: 100%;
  }
 
  .card {
      width: 18rem;
      background-color: rgba(255, 255, 255, 0.04);
-     height: 300px;
      padding: 15px;
      border-radius: 14px;
      color: white;
      line-height: 1.8;
      transition: 0.4s ease;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+ }
+
+ .badge {
+     padding: 5px 10px;
+     border-radius: 999px;
+     font-size: 12px;
+     font-weight: 600;
+     color: white;
+ }
+
+ .html {
+     background: #e34c26;
+ }
+
+ .css {
+     background: #264de4;
+ }
+
+ .js {
+     background: #f7df1e;
+     color: black;
  }
 
  .title {
@@ -153,13 +178,14 @@
  .btn {
      border: none;
      text-decoration: none;
-     padding: 20px;
+     padding: 15px;
      background-color: darkblue;
      color: white;
      font-size: 16px;
      width: max-content;
-     margin-top: 13px;
+     align-self: flex-start;
      border-radius: 9px;
+     margin-top: auto;
  }
 
  .btn:hover {
@@ -168,6 +194,13 @@
 
  .btn:active {
      transform: scale(0.95);
+ }
+
+ #badge-cont {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 15px;
+     margin-top: 10px;
  }
 
  #projects-cont {
