@@ -1,0 +1,23 @@
+{
+  "name": "primary",
+  "version": "1.0.0",
+  "description": "Frontend developer portfolio with Vercel Web Analytics",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hallmarkweb12/Practice_projects.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hallmarkweb12/Practice_projects/issues"
+  },
+  "homepage": "https://github.com/hallmarkweb12/Practice_projects#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
