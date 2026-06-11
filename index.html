@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend Developer Portfolio</title>
-    <!-- Vercel Web Analytics -->
-    <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta name="description"
         content="Frontend developer portfolio showcasing responsive web projects and modern UI design.">
@@ -31,10 +30,22 @@
         <div id="hero-text">
             <h1>Hi, I'm Fawaz</h1>
             <h2 class="typing"></h2>
-            <p>I build responsive web interfaces using HTML, CSS, and JavaScript. I focus on turning ideas into
-                functional
-                user experiences and improving my ability to work with real APIs and frontend logic.
+
+            <p>
+                I build responsive web interfaces using HTML, CSS, and JavaScript.
+                I focus on turning ideas into functional user experiences and improving
+                my ability to work with real APIs and frontend logic.
             </p>
+
+            <div class="hero-actions">
+                <a href="Fawaz_Yusuf_CV(1).pdf" class="resume-btn" target="_blank">
+                    View Resume
+                </a>
+
+                <a href="#contact" class="contact-btn">
+                    Hire Me
+                </a>
+            </div>
         </div>
 
         <div id="hero-image">
@@ -54,7 +65,6 @@
             </p>
         </div>
     </section>
-
     <!--  PROJECTS SECTION  -->
     <section id="projects">
         <h3 class="projectstext">PROJECTS</h3>
@@ -82,10 +92,9 @@
                     <span class="badge html">HTML</span>
                     <span class="badge css">CSS</span>
                     <span class="badge js">JavaScript</span>
+                    <a href="https://to-do-list-delta-mocha-50.vercel.app/" class="btn" target="_blank">See Project</a>
                 </div>
-                <a href="https://to-do-list-delta-mocha-50.vercel.app/" class="btn" target="_blank">See Project</a>
             </div>
-        </div>
     </section>
 
 
@@ -115,14 +124,27 @@
         </div>
     </section>
     <section id="contact">
-        <div class="contact-box">
-            <h2>Contact Me</h2>
-            <h3> 📞 Phone: +2348022124782</h3>
-            <h3>📧 Email: profsfawaz@gmail.com</h3>
-            <a href="mailto:profsfawaz@gmail.com" class="contact-btn">Send Email</a>
+        <div class="contact-container">
+
+            <div class="contact-box">
+                <h2>Contact Me</h2>
+                <h3> 📞 Phone: +2348022124782</h3>
+                <h3>📧 Email: profsfawaz@gmail.com</h3>
+            </div>
+
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <input type="hidden" name="access_key" value="01062a91-6e61-4609-a950-7f781ee3daa7">
+
+                <h2 class="contact-h2">Let's Connect</h2>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+
+                <button type="submit">Submit Form</button>
+            </form>
+
         </div>
     </section>
-
     <!-- FOOTER -->
     <footer>
         <p>© 2026 Fawaz. All rights reserved.</p>
