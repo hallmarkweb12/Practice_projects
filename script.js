@@ -46,3 +46,11 @@ form.addEventListener('submit', async (e) => {
         submitBtn.disabled = false;
     }
 });
+document.querySelector("form").addEventListener("submit", function(e) {
+    const response = grecaptcha.getResponse();
+
+    if (response.length === 0) {
+        e.preventDefault();
+        alert("Please verify you are not a robot ❌");
+    }
+});
